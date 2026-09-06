@@ -1,0 +1,10 @@
+{
+  "dataset": "GSE285335",
+  "synthetic": false,
+  "expected_feature_rows": 36601,
+  "feature_content_sha256": "6bacbd038808fc3ccc6d340d24c48b1db76aa0b57a8fb9033e607fe1774a4a97",
+  "baseline": {"min_features": 200, "max_features": 6000, "max_mito_pct": 20},
+  "strict": {"min_features": 500, "max_features": 5000, "max_mito_pct": 10},
+  "review_min_cells": 500,
+  "review_min_retention": 0.5
+}

@@ -1,0 +1,18 @@
+{
+  "dataset": "SYNTHETIC",
+  "synthetic": true,
+  "expected_feature_rows": 3,
+  "feature_content_sha256": "1be98519d42a374660f3f0fc34854464d627fa87fe9517909047be14645f62fc",
+  "baseline": {
+    "min_features": 1,
+    "max_features": 3,
+    "max_mito_pct": 50
+  },
+  "strict": {
+    "min_features": 2,
+    "max_features": 3,
+    "max_mito_pct": 25
+  },
+  "review_min_cells": 500,
+  "review_min_retention": 0.5
+}

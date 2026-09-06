@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IgAN-Flow — {{ data.dataset }} QC report</title>
+<style>
+:root{color-scheme:light dark;--bg:#f5f7fa;--paper:#fff;--ink:#243344;--muted:#526174;--line:#dbe2ea;--accent:#2463a0}
+@media(prefers-color-scheme:dark){:root{--bg:#151c26;--paper:#202a36;--ink:#edf2f8;--muted:#bec9d7;--line:#445164;--accent:#90bfee}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,sans-serif}
+main{max-width:1180px;margin:auto;padding:42px 24px 80px}header{border-bottom:3px solid var(--accent);padding-bottom:24px}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.12;letter-spacing:-.04em;margin:10px 0 18px}h2{font-size:24px;margin:0 0 12px;line-height:1.3}
+p{max-width:90ch}a{color:var(--accent)}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lead{font-size:20px;line-height:1.5}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:26px 0}.stat{background:var(--paper);padding:16px;border:1px solid var(--line)}
+.stat strong{font-size:27px;display:block;font-variant-numeric:tabular-nums}.stat span,.note{font-size:14px;color:var(--muted)}section{margin:38px 0}
+.figure{background:white;padding:14px;margin:18px 0;color:#243344}.figure img{display:block;width:100%;height:auto}.table-wrap{overflow:auto;border:1px solid var(--line);background:var(--paper);margin:16px 0}
+table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right}th:first-child,td:first-child{text-align:left}th{background:var(--bg);text-align:right}
+code{font-size:.9em}details{margin:16px 0}summary{cursor:pointer;font-weight:600}.warning{border-left:4px solid #a66b12;padding:12px 18px;background:var(--paper)}
+@media(max-width:650px){main{padding:24px 14px}.stats{grid-template-columns:1fr 1fr}.figure{overflow:auto}.figure img{min-width:740px}h2{font-size:21px}}
+@media print{body{background:white;color:black}main{max-width:none;padding:0}.table-wrap{overflow:visible}details{display:block}.figure img{min-width:0}section{break-inside:avoid}}
+</style></head>
+<body><main>
+<header><div class="eyebrow">IgAN-Flow · reproducible data processing · {{ data.dataset }}</div>
+<h1>How cell-quality filters change donor coverage</h1>
+{% if data.synthetic %}<p class="warning"><strong>Synthetic fixture.</strong> These values validate software arithmetic and have no biological interpretation.</p>{% endif %}
+<p class="lead">{{ finding }}</p><p>{{ largest }} All donor-level counts in both settings passed independent verification against the original matrix entries.</p>
+<p class="note">Generated {{ data.generated_utc }}. Source retrieval: {{ data.retrieval_min_utc }} through {{ data.retrieval_max_utc }}.</p></header>
+<div class="stats"><div class="stat"><strong>{{ data.donors }}</strong><span>Donors processed</span></div><div class="stat"><strong>{{ '{:,}'.format(data.supplied_barcodes) }}</strong><span>Supplied barcodes</span></div><div class="stat"><strong>{{ '{:,}'.format(data.baseline_retained) }}</strong><span>Baseline retained</span></div><div class="stat"><strong>{{ '{:,}'.format(data.strict_retained) }}</strong><span>Strict retained</span></div></div>
+<section><h2>What the comparison measures</h2>
+<p>Each donor is one biological sampling unit. Retention is the fraction of that donor's supplied barcodes passing a fixed filter. Counts are original integer gene-expression UMI counts. “Early” and “Late” retain the study's author labels. Blood immune cells do not directly measure kidney tissue or future clinical outcomes.</p>
+<div class="table-wrap"><table><thead><tr><th>Setting</th><th>Minimum features</th><th>Maximum features</th><th>Maximum mitochondrial UMI %</th></tr></thead><tbody>
+{% for setting in ['baseline','strict'] %}<tr><td>{{ setting }}</td><td>{{ data.settings[setting].min_features }}</td><td>{{ data.settings[setting].max_features }}</td><td>{{ data.settings[setting].max_mito_pct }}</td></tr>{% endfor %}</tbody></table></div>
+<p class="note">Boundaries are inclusive; total UMI must exceed zero. These are sensitivity settings, not universally validated quality cutoffs. Donors with fewer than 500 retained cells or under 50% retention receive review flags and remain visible.</p></section>
+<section><h2>Retention changes differ between donors</h2><p>The connected points show the same donor under both settings. Open squares identify strict filtering. A wider gap means greater sensitivity to these thresholds; it does not establish a disease effect.</p>
+<figure class="figure"><img src="{{ retention_uri }}" alt="Paired baseline and strict retention percentages for every donor, grouped by author group and library batch."></figure>
+<p class="note">Denominator: each donor's supplied barcodes. Exact counts and flags: <a href="tables/donor_qc.tsv">donor QC table</a>. <a href="figures/donor_retention.svg">Export chart SVG</a>.</p></section>
+<section><h2>Starting quality distributions vary by donor</h2><p>Points show donor medians and horizontal ranges show the 25th–75th percentiles among supplied barcodes. These distribution summaries support inspection of attrition; they do not pool cells into independent group replicates.</p>
+<figure class="figure"><img src="{{ qc_uri }}" alt="Donor-level medians and interquartile ranges of detected features and mitochondrial count percentages before project filtering."></figure>
+<p class="note">Before/after medians and quartiles for both settings are included in <a href="tables/donor_qc.tsv">the full QC export</a>. <a href="figures/input_qc_distributions.svg">Export chart SVG</a>.</p></section>
+<section><h2>Group and chemistry coverage constrain comparisons</h2><p>First and Second batches use 10x 5-prime v1.1 and v2.0 chemistry respectively. The tables retain each group/batch segment. Median retention weights donors equally; summed barcode counts are descriptive volume totals.</p>
+<p>{{ segment_finding }}</p>
+<div class="table-wrap">{{ batch_table | safe }}</div><div class="table-wrap">{{ group_table | safe }}</div>
+{% for d in data.design %}<p><strong>{{ d.setting }}:</strong> {{ d.eligible_donors }} nonzero-library donors; design rank {{ d.rank if d.rank is not none else 'unavailable' }} of 4, {{ d.status }}. {{ d.review_flagged_donors | length }} donors carry review flags.</p>{% endfor %}
+<p class="note">Fixed columns: intercept, Second batch, Early, Late; Healthy/First are references. Zero-library donors are excluded from analysis-oriented matrices and retained in the audit. Full rank means estimability only. <a href="evidence/design_audit.json">Design evidence</a>.</p></section>
+<section><h2>Every donor and rejection decision stays traceable</h2><p>{{ rejection_finding }}</p><div class="table-wrap">{{ donor_table | safe }}</div>
+<details><summary>Show overlapping rejection reasons</summary><p>Reason flags overlap. Use rejected_union to reconcile supplied = retained + rejected. Individual reason counts must not be added together.</p><div class="table-wrap">{{ reason_table | safe }}</div></details>
+<p><a href="tables/pseudobulk_baseline.tsv.gz">Baseline counts</a> · <a href="tables/pseudobulk_strict.tsv.gz">Strict counts</a> · <a href="tables/genes.tsv">Feature mapping</a> · <a href="tables/data_locations.tsv">Large AnnData file locations</a> · <a href="tables/excluded_samples.tsv">Zero-cell exclusions</a></p></section>
+<section><h2>Verification checks the original entries</h2><p>Nextflow runs acquisition, validation, QC, export, and independent verification as separate donor tasks. The verifier recomputes metrics and accumulates original coordinate entries into every gene/donor/setting sum, then checks sparse AnnData counts, orientation, identity, and provenance.</p>
+<p>Maximum measured donor-process RSS: {{ '%.2f' | format(data.peak_donor_process_rss_bytes / 1073741824) }} GiB. Sum of measured donor task times: {{ '%.1f' | format(data.summed_donor_task_seconds / 60) }} minutes. This sum is not workflow wall time or total concurrent memory.</p>
+<p><a href="evidence/donor_verification_summary.json">Verification index</a> · <a href="evidence/manifest_validation.json">Cohort validation</a> · <a href="tables/input_provenance.tsv">Input hashes and retrieval dates</a> · <a href="tables/task_metrics.tsv">Measured task resources</a> · <a href="summary.json">Software versions and report data</a></p>
+<p class="note">Files: {{ data.files }}; compressed source bytes: {{ '{:,}'.format(data.source_bytes) }}. Feature IDs are supplied unique gene symbols; no Ensembl mapping, normalization, or gene collapse was applied.</p></section>
+<section><h2>Interpretation limits and next questions</h2><ul>{% for item in data.limitations %}<li>{{ item }}</li>{% endfor %}</ul>
+<p>Inspect flagged donors and threshold sensitivity before designing a downstream analysis. A future cell-type question requires separate annotation, doublet/ambient-RNA assessment, and a donor-aware statistical design. No differential-expression, biomarker, causal, or clinical prediction claim is made here.</p>
+<p class="note">Source: <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285335">NCBI GEO GSE285335</a>. This report and its figures work offline; source hyperlinks are optional external references.</p></section>
+</main></body></html>

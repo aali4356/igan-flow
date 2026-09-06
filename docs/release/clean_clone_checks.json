@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "verified_utc": "2026-09-06T20:57:18.740471+00:00",
+  "candidate_commit": "58212c7857f3458a43fb1544eb3a28c2b76eeb40",
+  "implementation_sha256": "e4e8eebfb09a7304c53f4eccb8d9b223823ad3bc5d61753371fafcc6f97d98c5",
+  "commands": [
+    [
+      "bash",
+      "scripts/bootstrap.sh"
+    ],
+    [
+      "bash",
+      "scripts/bootstrap.sh"
+    ],
+    [
+      "git",
+      "diff",
+      "--exit-code"
+    ],
+    [
+      "bash",
+      "scripts/bootstrap_browser.sh"
+    ],
+    [
+      "bash",
+      "scripts/ci.sh"
+    ],
+    [
+      "bash",
+      "-c",
+      "source scripts/env.sh; python scripts/audit_public_files.py; node scripts/qa_report.cjs docs/example/report.html results/release/public_browser"
+    ]
+  ],
+  "bootstrap_runs": 2,
+  "source_and_locks_unchanged": true,
+  "unit_tests": 35,
+  "integration_cases": 17,
+  "fresh_synthetic_tasks_completed": 13,
+  "synthetic_offline_browser_cases": 4,
+  "public_example_offline_browser_cases": 4,
+  "fixture_inputs_all_inside_clone": true,
+  "real_download_cache_absent": true,
+  "original_remote_removed": true,
+  "shared_resources": "Verified Java/Nextflow download archives and browser binaries only; separate Python environment, Nextflow cache, work and results.",
+  "platform": "macOS 26.5.1 arm64; Linux and hosted CI remain unverified",
+  "runtime": {
+    "architecture": "arm64",
+    "environment": {
+      "MKL_NUM_THREADS": "2",
+      "MPLBACKEND": "Agg",
+      "NUMEXPR_NUM_THREADS": "2",
+      "NXF_DISABLE_CHECK_LATEST": "true",
+      "NXF_OFFLINE": "true",
+      "NXF_OPTS": "-Xms256m -Xmx2g -XX:ActiveProcessorCount=2",
+      "NXF_VER": "26.04.6",
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "2",
+      "VECLIB_MAXIMUM_THREADS": "2"
+    },
+    "java": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)",
+    "nextflow": "N E X T F L O W\n      version 26.04.6 build 12646\n      created 09-07-2026 18:50 UTC (14:50 EDT)\n      cite doi:10.1038/nbt.3820\n      http://nextflow.io",
+    "nextflow_sha256": "182a63c74074e2dc7956ffa3c8cd59de952ed2c44394e21faf5e1736b945444c",
+    "packages": {
+      "Jinja2": "3.1.6",
+      "MarkupSafe": "3.0.3",
+      "Pygments": "2.21.0",
+      "anndata": "0.11.4",
+      "array-api-compat": "1.15.0",
+      "contourpy": "1.3.3",
+      "cycler": "0.12.1",
+      "fonttools": "4.64.0",
+      "h5py": "3.14.0",
+      "iniconfig": "2.3.0",
+      "kiwisolver": "1.5.1",
+      "matplotlib": "3.10.3",
+      "natsort": "8.4.0",
+      "numpy": "2.2.6",
+      "packaging": "26.3",
+      "pandas": "2.2.3",
+      "pillow": "12.3.0",
+      "pluggy": "1.6.0",
+      "pyparsing": "3.3.2",
+      "pytest": "8.4.1",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2026.3.post1",
+      "ruff": "0.12.12",
+      "scipy": "1.15.3",
+      "six": "1.17.0",
+      "threadpoolctl": "3.6.0",
+      "tzdata": "2026.3"
+    },
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.11.0"
+  },
+  "scope": "Complete local CI and README quickstart from an independent clone of the release implementation. Machine-specific paths and logs are omitted."
+}

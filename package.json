@@ -1,0 +1,8 @@
+{
+  "name": "igan-flow-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional offline report acceptance tooling",
+  "devDependencies": {"playwright": "1.55.0"},
+  "engines": {"node": ">=22"}
+}

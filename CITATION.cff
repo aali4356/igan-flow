@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this software when using IgAN-Flow, and cite the original GSE285335 study separately."
+type: software
+title: "IgAN-Flow: reproducible donor QC sensitivity analysis for GSE285335"
+version: 1.0.0
+date-released: 2026-09-06
+authors:
+  - family-names: Ali
+    given-names: Ahmad
+license: MIT
+abstract: "A Nextflow DSL2 workflow that preserves original sparse integer PBMC counts, compares two fixed quality-control settings, and independently verifies donor exports and cohort accounting."
+keywords:
+  - Nextflow
+  - IgA nephropathy
+  - single-cell RNA sequencing
+  - reproducibility
+  - quality control

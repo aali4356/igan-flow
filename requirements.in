@@ -1,0 +1,9 @@
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.2.3
+anndata==0.11.4
+h5py==3.14.0
+matplotlib==3.10.3
+Jinja2==3.1.6
+threadpoolctl==3.6.0
+pytest==8.4.1

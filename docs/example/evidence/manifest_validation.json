@@ -1,0 +1,44 @@
+{
+  "batches": {
+    "First": 8,
+    "Second": 18
+  },
+  "dataset": "GSE285335",
+  "groups": {
+    "Early": 11,
+    "Healthy": 9,
+    "Late": 6
+  },
+  "manifest_donors": 26,
+  "manifest_sha256": "3a8254e57bb27f34ed03f998f3c59e2d676f52da056c4b2b380309294eb1ed89",
+  "sample_ids": [
+    "GSM8700986",
+    "GSM8700987",
+    "GSM8700988",
+    "GSM8700989",
+    "GSM8700990",
+    "GSM8700991",
+    "GSM8700992",
+    "GSM8700993",
+    "GSM8700994",
+    "GSM8700995",
+    "GSM8700996",
+    "GSM8700997",
+    "GSM8700998",
+    "GSM8700999",
+    "GSM8701000",
+    "GSM8701001",
+    "GSM8701002",
+    "GSM8701003",
+    "GSM8701004",
+    "GSM8701005",
+    "GSM8701006",
+    "GSM8701007",
+    "GSM8701008",
+    "GSM8701009",
+    "GSM8701010",
+    "GSM8701011"
+  ],
+  "selected_donors": 26,
+  "status": "PASS"
+}

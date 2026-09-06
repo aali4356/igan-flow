@@ -1,0 +1,36 @@
+[
+  {
+    "eligible_donors": 26,
+    "excluded_zero_library": [],
+    "expected_columns": [
+      "intercept",
+      "batch_2",
+      "group_Early",
+      "group_Late"
+    ],
+    "expected_rank": 4,
+    "interpretation": "Estimability check only; no biological, causal, or clinical validation.",
+    "missing_required_metadata": 0,
+    "rank": 4,
+    "review_flagged_donors": [],
+    "setting": "baseline",
+    "status": "full_rank"
+  },
+  {
+    "eligible_donors": 26,
+    "excluded_zero_library": [],
+    "expected_columns": [
+      "intercept",
+      "batch_2",
+      "group_Early",
+      "group_Late"
+    ],
+    "expected_rank": 4,
+    "interpretation": "Estimability check only; no biological, causal, or clinical validation.",
+    "missing_required_metadata": 0,
+    "rank": 4,
+    "review_flagged_donors": [],
+    "setting": "strict",
+    "status": "full_rank"
+  }
+]

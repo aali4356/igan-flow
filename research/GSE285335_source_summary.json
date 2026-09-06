@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-09-06T17:34:54.161940+00:00",
+  "series_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285335",
+  "metadata_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE285nnn/GSE285335/matrix/GSE285335_series_matrix.txt.gz",
+  "metadata_sha256": "53ebbf7a48974618657de821f8263fe323aa793bb05323e768786e8be1e7d31a",
+  "filelist_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE285nnn/GSE285335/suppl/filelist.txt",
+  "filelist_sha256": "5885751f2f689012b5c714789fe950d09680e51eeb0df0293084aa1784cf5187",
+  "n_samples": 26,
+  "groups": {
+    "Late": 6,
+    "Early": 11,
+    "Healthy": 9
+  },
+  "group_by_batch": {
+    "Late/First": 2,
+    "Late/Second": 4,
+    "Early/First": 2,
+    "Early/Second": 9,
+    "Healthy/First": 4,
+    "Healthy/Second": 5
+  },
+  "supplied_barcodes_total": 282463,
+  "supplementary_file_bytes_total": 1586505246,
+  "feature_content_hashes": {
+    "6bacbd038808fc3ccc6d340d24c48b1db76aa0b57a8fb9033e607fe1774a4a97": 26
+  },
+  "feature_rows": {
+    "36601": 26
+  },
+  "unique_feature_ids": {
+    "36601": 26
+  },
+  "all_feature_columns_1_and_2_identical": true,
+  "note": "Supplied barcode counts are before this project QC; not independently verified viable-cell counts. Full expression matrices were not downloaded by default."
+}

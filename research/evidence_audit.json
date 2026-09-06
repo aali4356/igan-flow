@@ -1,0 +1,22 @@
+{
+  "status": "PASS: saved research evidence is internally consistent",
+  "donors": 26,
+  "supplied_barcodes": 282463,
+  "compressed_expression_bytes": 1586505246,
+  "groups": {
+    "Late": 6,
+    "Early": 11,
+    "Healthy": 9
+  },
+  "group_by_batch": {
+    "Late/First": 2,
+    "Late/Second": 4,
+    "Early/First": 2,
+    "Early/Second": 9,
+    "Healthy/First": 4,
+    "Healthy/Second": 5
+  },
+  "source_hashes_match": true,
+  "metadata_alignment_matches": true,
+  "limits": "This audits saved metadata and inspection summaries. It does not validate all matrix values or execute the planned Nextflow workflow."
+}

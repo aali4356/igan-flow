@@ -1,0 +1,20 @@
+{
+  "audience": "technical",
+  "chart_grain": "one point per donor; supplied barcodes are the retention denominator",
+  "charts": {
+    "donor_retention": "paired dot plot, 0-100 percent axis, two fixed settings",
+    "input_qc_distributions": "donor medians and interquartile ranges; no pooled-cell inference"
+  },
+  "quantitative_table_reason": "Exact donor counts, overlapping rejection flags, and design rank require lookup tables.",
+  "structure": [
+    "answer",
+    "scope and definitions",
+    "donor retention sensitivity",
+    "QC distributions",
+    "chemistry/group coverage",
+    "exact audit tables",
+    "methods and verification",
+    "limitations and next questions"
+  ],
+  "surface": "self-contained HTML"
+}

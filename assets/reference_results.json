@@ -1,0 +1,165 @@
+{
+  "baseline_retained": 281496,
+  "canonical_fingerprints": {
+    "GSM8700986": {
+      "baseline_counts": "5370009e1030979470a2327d7902517781a77a7260db95531a0f840a5574035e",
+      "baseline_mask": "63830a64967534748658dfe429b25f6ed58df7a5e6680fa804d28f16ceed62ab",
+      "strict_counts": "6d72700ecce247d195f56c65ef0d539f4dad590ac98ef52f14d697065c08a502",
+      "strict_mask": "11c566ba0f07219ef7c939598acf9cfbf9309a5805356a9fdf60a7e19e8c4080"
+    },
+    "GSM8700987": {
+      "baseline_counts": "6d0826b1a5ddba105ac49e154fcf691d782a7d76b4d31995a60db04a8880d9b4",
+      "baseline_mask": "5a13638a974c9f4b82e192f92e511466e9f9e13a3bffaaadbd1e6e569582791a",
+      "strict_counts": "8465cb9281edd616727f81d7902c50b8b0b99bc35f21f9714b3e1f49d2fedcc3",
+      "strict_mask": "6cfb2036078fb2e808be6c7a38f877bf90e90232d4aa1e991d9e210f87e391ee"
+    },
+    "GSM8700988": {
+      "baseline_counts": "2a4b71db049578ef67c0e47141303009cf256dfb4ff32f3625b78c184acd386e",
+      "baseline_mask": "b8efbd3ec344cc6485d5cf87b6a606f34cf3303a6753e8bce6ecad5c085441cf",
+      "strict_counts": "d8097c695ce2227b71d0be4e980e3f928014f8a4f8fb949575a2d92207c190eb",
+      "strict_mask": "11d716f18f9b3a4f4554992b491c32518535318c5b4324d0cefe139616f5db35"
+    },
+    "GSM8700989": {
+      "baseline_counts": "1764ace2dac2b19a0ec0d701afbf3b58ce206e43fd4bfe9fcb560cf2080e3117",
+      "baseline_mask": "f19cf538eeb0cab4c05788c14d528fd511edce75c5bc62441d864443ae915534",
+      "strict_counts": "ef55bf57b490f526b9512e75f9a4a33526e1b9c893c0f474b2ec86b29891d787",
+      "strict_mask": "761430fa01fb09989dd8843028a2deeb9153de3201eae56465d1273b34a76dd1"
+    },
+    "GSM8700990": {
+      "baseline_counts": "5dae3e358e355f619000ee25576f8c1779dbc382f48105f10f75c299e51cb844",
+      "baseline_mask": "4797a0559652300b94259c4415fa4eeba5f6214b9c36f1004ac919ce99c29e84",
+      "strict_counts": "6716fb04839e390d1ec232eab370b6c2e6f61b3b1e39979ccef94ad3bb0c8472",
+      "strict_mask": "0d1eccb4c97fa55d4a28ecf5be904dba8d743bc9403fc722d2f9e29c6cffd165"
+    },
+    "GSM8700991": {
+      "baseline_counts": "430972bc1256cf49b1b45d5db6eb17f86bccfb8f7a88f732f95feb09886f7a93",
+      "baseline_mask": "114c2f80fcde6e8a6208fc841bf41c83119a434b99567960dc7832c239fb1cce",
+      "strict_counts": "a9c914d4e13ec0159fee198fcc1e65d138d5f0233e0566e62c3908cf79c1d2fd",
+      "strict_mask": "61e923ad9f117e5a64daf0636593a9466dc1fc72a9f19f1edf9406dc4a668946"
+    },
+    "GSM8700992": {
+      "baseline_counts": "02bd9f38727588d017f4c9cafe3fb0d40890399370c0e55a6a5c3e4469e357d4",
+      "baseline_mask": "3ca5fc4258de755ab86dd94ab35276d79e9cef42688027837a7fe748ac9eb6b5",
+      "strict_counts": "c58fb679dcd764c73cb6a3032a70da8e1b2254c2be81baf0b0277bdc6526a32a",
+      "strict_mask": "9d4e0b256380e684552fd2498f6fbad07fbfd3e1e96595f4f2eb6b3e7b69752d"
+    },
+    "GSM8700993": {
+      "baseline_counts": "81208eb2e2b5e0978ff4ad36cf3b4ef97c305c9e77d80957cd528481427b8326",
+      "baseline_mask": "29353768a73c5528e5f3a15d02d69e9b15f5f6716276cae7ab0fb8a4fbbae2eb",
+      "strict_counts": "44756047801b508ab45f4489c2271b6641887f82c3b6b017117bc7cdc76d95fa",
+      "strict_mask": "5847f66462840e65a3befefe94e13997906f93ab8d31dbf2c9d5d7d706e74500"
+    },
+    "GSM8700994": {
+      "baseline_counts": "2e8cae9b64b23797164b9d4578392627fd212a79f1d691554759633984de74bc",
+      "baseline_mask": "b71fd8237322c95b637a83cba28f2e549a5ab9bbccbdab95a5431197b09a44bf",
+      "strict_counts": "65bfab1be3b147990e23259460900d0e83339afd3076f957a08a4d99d6677a89",
+      "strict_mask": "14ef6d2cc9377ae9e4f186a6b3b5fff308cbda71bdb92a08622d42f0a5eb6aae"
+    },
+    "GSM8700995": {
+      "baseline_counts": "2240b256b9970aadd381544bfbea375255eee6878145953291cca13b80e00dd9",
+      "baseline_mask": "9e18dad02c62588d37d63ae16e9b918429d2f4307bab51f736029cdcedb00d1e",
+      "strict_counts": "9138969c0becac04452dbd8058584338901dc1c50d611388706ba566c2679b45",
+      "strict_mask": "7764f472dd0501db4cef488312763085b00d8e51e14ab590950bfe72d20bfc9f"
+    },
+    "GSM8700996": {
+      "baseline_counts": "ca6cd56c3c1ebcc798deedb46e8e1097bf77a2e11411daeeed6ba3f08dec2f0c",
+      "baseline_mask": "9fd52ff9d5989adb3bc18f06dd1b72087646ad1d999bbc5448fcc8c4e6e8f74e",
+      "strict_counts": "96461b2b73b98b3f4606a095dbd8b3f5cd6b8ee0fe742e7b378fa3900efe4c51",
+      "strict_mask": "860eed7128b6facbe990e6f2c2d637ecf5a205a13be1bca7dda62c77469f131d"
+    },
+    "GSM8700997": {
+      "baseline_counts": "6b968ad38e4cc76cac4071f4cf5818805cd427c4d5122ef043a170963962c34e",
+      "baseline_mask": "d73a58dd0d2c8e90386772832a13a42891c9dc47710305b3d0a5ffb69ee5735d",
+      "strict_counts": "0141dff22c5258941025f24ca628b2270e52a3e91233ba46d5910c8debf56efc",
+      "strict_mask": "3cde6b19bbe1750b45fcded06cec95406bc6132efc61a741faf18b7220af9c74"
+    },
+    "GSM8700998": {
+      "baseline_counts": "ec2901445a2b4bfdfdda113ccd3ba0962550d49e8ccc97c6d04c8569fe0209d9",
+      "baseline_mask": "386ba2c9b2d035b34088de801e6bd9740547e5fa8770be47a75fd91a197b9bee",
+      "strict_counts": "be2179f5d0bfd97b57149e53d9993cc7b6e6a3069604f6d6e3ce03a01c1909fa",
+      "strict_mask": "5f7b933468714d8db03170b631f8b3c8f89ffdd812384b6b3bd3fdd4809adb61"
+    },
+    "GSM8700999": {
+      "baseline_counts": "277404c4312f0601190a4bf9baeff331777525326e07ab6bf2b2aa653389a82e",
+      "baseline_mask": "121bbf32d3de37a8006154091b9d600bd2c2189560ec2312b282d1b387e2279e",
+      "strict_counts": "4e5f842c969ab7a858d0b266c73cfe9a4b8eeeb2e2e3dc6b90cb54c5fb45c8a1",
+      "strict_mask": "54ddba3fc62bd1cbd75b78cc2041305174983d5bca1dc40afda87bbec12e53aa"
+    },
+    "GSM8701000": {
+      "baseline_counts": "72858d356b64707e413d5835ec06e6a5d134923882ed249730ff2407419f9c40",
+      "baseline_mask": "e8aeb665ac58eb690b97bd178d0fb8d44a4ba019ed41777d7e35001f364c6a13",
+      "strict_counts": "5a5831ad3b14e12fab7dc5c1efe16e90dc0c9a40d382c3c6adf8851c7f23223e",
+      "strict_mask": "db1e5fa17498f3f7739b6a2b3f25737b198425741254158920e90568d79a2cb2"
+    },
+    "GSM8701001": {
+      "baseline_counts": "cb3a032017724bc3bc3087bdf51f615af52f33d7bcc8a1bc446a3e8e05286a6f",
+      "baseline_mask": "1cd344ebbbbe4e092399420493a0db782f7de3411cf4b84692879d583eec2e5a",
+      "strict_counts": "eb4c429e793bd7bff5a2b8f940ee4292f84884e8c6d9ec503c3346a3610b0a26",
+      "strict_mask": "f738ecf3d6597c8cdccb9ed0eeec7721b1ededb55ae8091ce08dd120cd6f5361"
+    },
+    "GSM8701002": {
+      "baseline_counts": "7ad5d4185e373c1f320bcaf7aa6879cee0b8f0432a06651dbeadd6aa55f3a8f7",
+      "baseline_mask": "ba381ab1972839982f2c8880e294bad5a5dcb4007b710f71ca3896e48d1134c8",
+      "strict_counts": "f8daaaf7a9915ae0958f46c746d6bd282642a52cd1b471ece5b84d4d36222e46",
+      "strict_mask": "e1c8e6a7a37857fe3a65942b788e77c3912f77caa8c72c5d215f4d7a1ad39ba8"
+    },
+    "GSM8701003": {
+      "baseline_counts": "2eec5d4d93075d8df4d7e5e1235a48c418ce2e9e229b3601cbf26cb67205e390",
+      "baseline_mask": "5b13a35131577ae52f48d3204b515c4935ee05cda4ae9d82ced73586480892de",
+      "strict_counts": "1a765ee7bfd9d33f3dffb2db221e40d6efc6fc4450178529fd239d1a3ccb61aa",
+      "strict_mask": "186ae861721bc71a876a6b45c0ab07b6b30c1424371e2213423503bf62780260"
+    },
+    "GSM8701004": {
+      "baseline_counts": "95f0a419972fabe3ca514fedddae97c1cd36a517c5786f30ed1c41b1ce6c9fb8",
+      "baseline_mask": "1161898a6a56fb4b9061801ff3337d0c69a2fecb78f8697d4ae29e4be1b38a4f",
+      "strict_counts": "da294e363d26840112718a0aaaac1a73444ea19e2bc9109cea881da96d29f06f",
+      "strict_mask": "95b3b7a803c130822dc7c9687fda87346f926d45a710e546179597936aee6223"
+    },
+    "GSM8701005": {
+      "baseline_counts": "c8a42b8b5c397400b6af8e2693622840351ca8762e2c0879ac413d0456ecf671",
+      "baseline_mask": "83346ca9746c87d780409438f33dd13b307464c608c51c4dac02d5bbda812520",
+      "strict_counts": "f8becdc715ea0bea2254f5a0320eb1a4cca76357eba69ce00cf8d752a22cd33a",
+      "strict_mask": "465d38a34b08f439a742cc09738b0b946cf21e906cf0709c8e5850a5ea5409e6"
+    },
+    "GSM8701006": {
+      "baseline_counts": "6d87afba652a8cf8e39620a75fedfdef8353c2010aa18147fa1ced41e9e10901",
+      "baseline_mask": "7c40adfea992a97b64e25879405c7eb03a763a80693f8c361ff6cca703e53514",
+      "strict_counts": "52cf1e99253c0956bda7837c33db02d2cd9ed5c3718eeccdb7e24d4ca17163e6",
+      "strict_mask": "99bbe296dc81ffaa90837a70e369ea4f900d6f230c452834adadba41d8d5d28e"
+    },
+    "GSM8701007": {
+      "baseline_counts": "a108d34989a0c5c221acfbe7fad744ff84a51a32dee56b8a649e5bd72c389a2c",
+      "baseline_mask": "0017502e2026fe4c09c2460399ee37d0659c17db96298e3d75cd0d2550cad670",
+      "strict_counts": "890054d1ee572303c8df16432efd2fad6e00780e599f782b7606fdedae616900",
+      "strict_mask": "4b6fa0e8ef13326e5e936f16ab2cdae83804f96d9e9bc00255f6bddb03340273"
+    },
+    "GSM8701008": {
+      "baseline_counts": "530ba8523ebf6dea4559398708fcd5a6c459910d5f75acf56fb400e1e17d5a39",
+      "baseline_mask": "9efb90abb6329513a19d53097f7e33b3ab68c0c862de81b2830c81a7fcc3ee37",
+      "strict_counts": "6b3a229ed2af6abaf7fc270ddc605d36f364c866529897d2b6401677111c6d07",
+      "strict_mask": "e4d8e649f01bbbba63c7259ea808088d971a4c49d717bbf8ae8ac681196b78bf"
+    },
+    "GSM8701009": {
+      "baseline_counts": "04dae3b3407e351b6ab2cebd4e28caabfe7da1827797f630e305c191d57d69f1",
+      "baseline_mask": "534534fdaec7d1ceef2acfab94eab6ae46b82d24e2f97ecaebc3b6f077873aeb",
+      "strict_counts": "38250ee4c7a277419d61e616c2087fecfb4f1324072d5eee58ce963bf62d5a52",
+      "strict_mask": "d6e750fef9901ad30a6f9bd6d5d2f915a21a01886ec9a34362fe4dba0d99b969"
+    },
+    "GSM8701010": {
+      "baseline_counts": "6dd06ea9bddb73dc22e818fb6d161035ff77f8b6345531e840cecb7531d398f0",
+      "baseline_mask": "993b3c45f22c68c3668e136b8873d592c386746888345e0b8063fe7c76a0daaf",
+      "strict_counts": "dbd3963a7b8d684593d0179a5f04c272b2690fbab03dd50c8055ee470a961bf8",
+      "strict_mask": "07420e5b5b6cc4730c14572eeeeac09269020a776eaf96153f4f087b805d3dc9"
+    },
+    "GSM8701011": {
+      "baseline_counts": "fdfa3ce29bed8f5cfcf74c8326445563fa3479b3b9fc394c61698a94a1beeaff",
+      "baseline_mask": "d99e53a3f69b85d3ec259a2a47e9cdc83a7167e4822c356de3930c250b1bdf25",
+      "strict_counts": "0c65bb595c7b45a70a655ad13b55d2e3844ff67b948b399725c35a7b492e2c7c",
+      "strict_mask": "cfa55be0bfc548dd5d9ea97d983aeb04e10d37c9e63f8457025d6fae57c0d86a"
+    }
+  },
+  "dataset": "GSE285335",
+  "features": 36601,
+  "strict_retained": 268880,
+  "supplied": 282463
+}

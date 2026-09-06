@@ -1,0 +1,27 @@
+{
+  "baseline_retained": 11206,
+  "canonical_fingerprints": {
+    "baseline_counts": "6dd06ea9bddb73dc22e818fb6d161035ff77f8b6345531e840cecb7531d398f0",
+    "baseline_mask": "993b3c45f22c68c3668e136b8873d592c386746888345e0b8063fe7c76a0daaf",
+    "strict_counts": "dbd3963a7b8d684593d0179a5f04c272b2690fbab03dd50c8055ee470a961bf8",
+    "strict_mask": "07420e5b5b6cc4730c14572eeeeac09269020a776eaf96153f4f087b805d3dc9"
+  },
+  "checks": [
+    "source_hashes",
+    "cell_identity",
+    "independent_metrics",
+    "all_reason_flags",
+    "strict_subset",
+    "all_gene_count_sums_both_settings",
+    "attrition_accounting",
+    "h5ad_sparse_integer_roundtrip",
+    "h5ad_identity_and_provenance"
+  ],
+  "elapsed_seconds": 2.330165083054453,
+  "features": 36601,
+  "peak_rss_bytes": 1449115648,
+  "sample_id": "GSM8701010",
+  "status": "PASS",
+  "strict_retained": 10315,
+  "supplied": 11227
+}

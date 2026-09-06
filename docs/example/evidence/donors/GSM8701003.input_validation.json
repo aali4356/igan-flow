@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "gzip CRC",
+    "dimensions",
+    "integer_token_grammar",
+    "integer_nonnegative_values",
+    "unique_sparse_coordinates",
+    "unique_barcodes",
+    "unique_feature_keys",
+    "fixed_feature_mapping",
+    "mitochondrial_annotation"
+  ],
+  "count_dtype": "int64",
+  "excluded_non_gene_features": 0,
+  "feature_content_sha256": "6bacbd038808fc3ccc6d340d24c48b1db76aa0b57a8fb9033e607fe1774a4a97",
+  "feature_rows": 36601,
+  "nonzero_entries": 14305408,
+  "source_stored_entries": 14305408,
+  "status": "PASS",
+  "supplied_barcodes": 10289
+}

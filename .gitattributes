@@ -1,0 +1,5 @@
+# Preserve Matplotlib's generated vector paths without whitespace-only rewrites.
+docs/example/figures/*.svg -whitespace
+# Standard CSV output and preserved study snapshots use CRLF line endings.
+*.csv whitespace=cr-at-eol
+research/*.tsv whitespace=cr-at-eol
