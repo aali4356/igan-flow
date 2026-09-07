@@ -1,4 +1,7 @@
-# IgAN-Flow
+# IgAN-Flow: Reproducible Single-Cell QC for IgA Nephropathy
+
+[![Synthetic release checks](https://github.com/aali4356/igan-flow/actions/workflows/ci.yml/badge.svg)](https://github.com/aali4356/igan-flow/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **A Nextflow workflow for donor-level QC sensitivity analysis of IgA nephropathy PBMC data.** It processes the public GSE285335 expression matrices, preserves original sparse integer counts, and checks how two fixed filters change donor coverage. Version 1.0.0.
 
@@ -12,11 +15,13 @@ GitHub displays the source of HTML files. Download the example folder and open `
 
 ## Quickstart
 
-Prerequisites: Python **3.11**, Bash, curl, tar and internet for initial setup. Native macOS ARM is the local release test platform. Linux x86_64 is configured for Ubuntu 24.04 CI; consult the release record for whether it has executed. Docker, a GPU, credentials and paid compute are unnecessary.
+Prerequisites: Python **3.11**, Bash, curl, tar and internet for initial setup. The complete cohort was validated on native macOS ARM. The synthetic CI suite targets Ubuntu 24.04 x86_64; see [hosted check results](https://github.com/aali4356/igan-flow/actions/workflows/ci.yml) for the status of each commit. Docker, a GPU, credentials and paid compute are unnecessary.
 
-From the repository root:
+Clone the repository and run the bundled example:
 
 ```bash
+git clone https://github.com/aali4356/igan-flow.git
+cd igan-flow
 bash scripts/bootstrap.sh
 bash scripts/run.sh test
 ```

@@ -1,6 +1,6 @@
 # IgAN-Flow 1.0.0 release readiness
 
-All available local release gates passed on September 6, 2026: the final implementation, complete cohort, current-run release audit, public-file review and an independent clean-clone check. Nothing has been published or deployed; the project has no remote.
+All available local release gates passed on September 6, 2026: the final implementation, complete cohort, current-run release audit, public-file review and an independent clean-clone check. The public repository is [aali4356/igan-flow](https://github.com/aali4356/igan-flow). [Hosted checks](https://github.com/aali4356/igan-flow/actions/workflows/ci.yml) and [versioned releases](https://github.com/aali4356/igan-flow/releases) provide the publication record.
 
 ## Executed evidence
 
@@ -46,23 +46,21 @@ The public example contains all donor-level summaries and combined count exports
 
 ## Clean clone and Git
 
-The dedicated Git repository is rooted in this project. Private notes and historical workspace inventories are ignored. Commit identity uses Ahmad Ali and the verified GitHub noreply address. The committed release implementation passed two bootstrap runs, all 35 tests, 17 integration checks, 13 fresh synthetic tasks, fresh fixture verification, and four browser cases each for the synthetic and public reports in an independent clone. The clone used a separate Python environment and empty work/result cache; every fixture source resolved inside the clone, and its real-download cache was absent. Only verified tool archives/browser binaries were shared. The clone retained a clean Git status and had its original remote removed. [Sanitized clean-clone evidence](docs/release/clean_clone_checks.json). The final public set contains 155 files (about 5.3 MB), including original code/docs, metadata snapshots and the compact example. Automated path/credential/size scans and manual review passed. No raw expression downloads, AnnData, environments or private planning files are tracked. The final commit is available through `git rev-parse HEAD`; the exact-commit follow-up clone record is kept locally at `results/release/final_clone.json`. No remote is configured.
+The dedicated Git repository is rooted in this project. Private notes and historical workspace inventories are ignored. Commit identity uses Ahmad Ali and the verified GitHub noreply address. The committed release implementation passed two bootstrap runs, all 35 tests, 17 integration checks, 13 fresh synthetic tasks, fresh fixture verification, and four browser cases each for the synthetic and public reports in an independent clone. The clone used a separate Python environment and empty work/result cache; every fixture source resolved inside the clone, and its real-download cache was absent. Only verified tool archives/browser binaries were shared. The clone retained a clean Git status and had its original remote removed. [Sanitized clean-clone evidence](docs/release/clean_clone_checks.json). The public set contains 155 files (about 5.3 MB), including original code/docs, metadata snapshots and the compact example. Automated path/credential/size scans and manual review passed. No raw expression downloads, AnnData, environments or private planning files are tracked. The checked-out commit is available through `git rev-parse HEAD`; the exact-commit local release follow-up clone record is kept at `results/release/final_clone.json`. Publication changes the README, citation and release record while preserving the behavior-affecting source fingerprint above.
 
-## Platform and external gates
+## Platform coverage
 
-macOS ARM is the executed local platform. Linux x86_64 is configured with a checksum-pinned Temurin release and an Ubuntu 24.04 CI job. No suitable local Linux runtime is available, so Linux execution and GitHub-hosted CI remain unverified until a runner executes them.
+macOS ARM is the full-cohort validation platform. GitHub Actions runs the offline synthetic release suite on Ubuntu 24.04 x86_64 using a checksum-pinned Temurin release. Consult the [workflow history](https://github.com/aali4356/igan-flow/actions/workflows/ci.yml) for executed Linux results and the exact commit checked. Synthetic Linux checks do not establish full-cohort Linux validation.
 
-The installed GitHub CLI credential returned HTTP 401 during a read-only check. Reauthenticate before the first GitHub publication. This does not affect the local repository or scientific verification.
+The committed local release summary and clean-clone evidence record platform coverage when those audits were created, before GitHub publication. Preserve these historical records when assessing later hosted results.
 
-## First publication commands
+## Published source
 
-Run from the repository root after the completed release handoff. These commands create and publish a new public repository under the verified account; they have not been executed:
+The repository is named **IgAN-Flow** independently of the original workspace folder. Clone the published source with:
 
 ```bash
-gh auth login --hostname github.com --git-protocol https --web
-gh auth setup-git
-gh repo create aali4356/igan-flow --public --source=. --remote=origin --push
-gh run list --repo aali4356/igan-flow
+git clone https://github.com/aali4356/igan-flow.git
+cd igan-flow
 ```
 
-Inspect the first hosted workflow result before representing Linux/hosted CI as passed. If `aali4356/igan-flow` already exists, inspect that repository before setting a remote or pushing; the create command will fail rather than replace an existing repository.
+The README links installation, examples, output contracts and interpretation limits. GitHub exposes the MIT license and the software citation from the committed release metadata.

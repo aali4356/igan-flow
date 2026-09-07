@@ -1,7 +1,9 @@
 cff-version: 1.2.0
 message: "Please cite this software when using IgAN-Flow, and cite the original GSE285335 study separately."
 type: software
-title: "IgAN-Flow: reproducible donor QC sensitivity analysis for GSE285335"
+title: "IgAN-Flow: Reproducible Single-Cell QC for IgA Nephropathy"
+repository-code: "https://github.com/aali4356/igan-flow"
+url: "https://github.com/aali4356/igan-flow"
 version: 1.0.0
 date-released: 2026-09-06
 authors:
